@@ -1,60 +1,96 @@
 <!DOCTYPE html>
 <html>
-
-<!-- Head Section -->
 <head>
-
-    <!-- Character Encoding -->
     <meta charset="UTF-8">
-
-    <!-- Responsive Design -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Author Name -->
     <meta name="author" content="Awadh Mubarak Awadh Bin Badr">
-
-    <!-- Page Description -->
     <meta name="description" content="Curriculum Vitae">
-
-    <!-- Page Title -->
     <title>Awadh Mubarak CV</title>
-
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 20px;
+            color: #1b2733;
+            line-height: 1.6;
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            border-bottom: 2px solid #0f3d3e;
+            padding-bottom: 16px;
+            margin-bottom: 24px;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 1.8em;
+            color: #0f3d3e;
+        }
+        h2 {
+            color: #0f3d3e;
+            border-left: 4px solid #17a398;
+            padding-left: 10px;
+            margin-top: 28px;
+        }
+        ul {
+            margin: 8px 0;
+        }
+        li {
+            margin-bottom: 4px;
+        }
+    </style>
 </head>
 
-<!-- Body Section -->
 <body>
 
-    <!-- Main Heading -->
-    <h1>Curriculum Vitae</h1>
+    <div class="header">
+        <!-- SVG Logo: monogram "AB" for Awadh Bin Badr, circuit motif for IT major -->
+        <svg width="90" height="90" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="AB monogram logo">
+            <defs>
+                <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#0f3d3e"/>
+                    <stop offset="100%" stop-color="#124a4b"/>
+                </linearGradient>
+                <linearGradient id="ringGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#17a398"/>
+                    <stop offset="100%" stop-color="#5fd4c4"/>
+                </linearGradient>
+            </defs>
 
-    <!-- Personal Information Section -->
+            <!-- background circle -->
+            <circle cx="60" cy="60" r="56" fill="url(#bgGrad)"/>
+
+            <!-- circuit trace arc, nodding to IT major -->
+            <path d="M 12 60 A 48 48 0 0 1 60 12" fill="none" stroke="url(#ringGrad)" stroke-width="3" stroke-linecap="round"/>
+            <circle cx="12" cy="60" r="3.5" fill="#5fd4c4"/>
+            <circle cx="60" cy="12" r="3.5" fill="#5fd4c4"/>
+
+            <path d="M 108 60 A 48 48 0 0 1 60 108" fill="none" stroke="url(#ringGrad)" stroke-width="3" stroke-linecap="round" opacity="0.6"/>
+            <circle cx="108" cy="60" r="3.5" fill="#5fd4c4" opacity="0.6"/>
+            <circle cx="60" cy="108" r="3.5" fill="#5fd4c4" opacity="0.6"/>
+
+            <!-- monogram -->
+            <text x="60" y="76" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-weight="700" font-size="44" fill="#f4faf9">AB</text>
+        </svg>
+
+        <h1>Curriculum Vitae</h1>
+    </div>
+
     <h2>Personal Information</h2>
-
-    <!-- Name -->
     <p><b>Name:</b> Awadh Mubarak Awadh Bin Badr</p>
-
-    <!-- Student ID -->
     <p><b>Student ID:</b> 681431030</p>
-
-    <!-- Major -->
     <p><b>Major:</b> Information Technology</p>
-
-    <!-- University -->
     <p><b>University:</b> Fatoni University</p>
 
-    <!-- Languages Section -->
     <h2>Languages I Speak</h2>
-
-    <!-- Languages List -->
     <ul>
         <li>Arabic</li>
         <li>English</li>
     </ul>
 
-    <!-- Programming Languages Section -->
     <h2>Programming Languages</h2>
-
-    <!-- Programming Languages List -->
     <ul>
         <li>HTML</li>
         <li>CSS</li>
@@ -62,19 +98,13 @@
         <li>React</li>
     </ul>
 
-    <!-- Projects Section -->
     <h2>Projects</h2>
-
-    <!-- Projects List -->
     <ul>
         <li>Fatoni University Uniform E-Commerce Website</li>
         <li>Personal Portfolio Website</li>
     </ul>
 
-    <!-- Activities Section -->
     <h2>Activities</h2>
-
-    <!-- Activities List -->
     <ul>
         <li>Participated in Web Development Projects.</li>
         <li>Completed HTML and React Assignments.</li>
@@ -82,5 +112,4 @@
     </ul>
 
 </body>
-
 </html>
